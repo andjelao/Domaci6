@@ -6,6 +6,6 @@ def zamjena_vrijednosti(x, y):
     mijenja mjesta vrijednostima x i y
     """
     x, y = y, x
-    print("Poslije",x, y)
+    print(x, y)
 
 zamjena_vrijednosti(x, y)
