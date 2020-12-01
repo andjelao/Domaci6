@@ -16,7 +16,17 @@ def rastojanje(unos):
     else: 
         s1 = v1 * T #predjeni put automobila1
         s2 = v2 * T #predjeni put automobila2
-        return s1 + s2
+        s1 = s1 % L
+        s2 = s2 % L
+        if s1 == 0 and s2 == 0:
+            return L
+        elif s1 + s2 == L:
+            return 0
+        elif s1 + s2 < L:
+            return L - (s1 + s2)
+        else:
+            return abs(s1 - s2)
+       
 
 print(rastojanje(unos))
 
