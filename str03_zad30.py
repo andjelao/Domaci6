@@ -28,7 +28,8 @@ def rastojanje(unos):
         # u slucaju da se jos uvijek nisu mimoisli, vec idu jedan ka drugom -> rastojanje je razlika duzine staze i puta koji je svaki od njih presao
             return L - (s1 + s2)
         else:
-        # u slucaju da su se mimoisli, oba auta su prosli odredjeni isti dio puta -> oni se ne udaljavaju, vec opet pocinju put jedan ka drugom
+        # u slucaju da su se mimoisli, oba auta su prosli odredjeni isti dio puta -> opet pocinju kretanje jedan ka drugom
+        # ne racunamo za koliko se udaljavaju vec koliko im treba da stignu jedan do drugog!
         # tada je rastojanje jednako razlici duzine staze i dijela puta koji su zajedno prosli
             return L - ((s1 + s2) % L)
        
