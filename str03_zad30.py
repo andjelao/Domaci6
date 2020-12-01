@@ -18,7 +18,7 @@ def rastojanje(unos):
         s2 = v2 * T #predjeni put automobila2
         s1 = s1 % L
         s2 = s2 % L
-        if T== 0:
+        if T == 0:
         # prije pocetka kretanja, u trenutku 0 -> rastojanje izmedju njih je jednako duzini staze jer tek treba da pocnu kretanje jedan ka drugom
             return L
         elif s1 + s2 == L:
