@@ -12,7 +12,7 @@ def rastojanje(unos):
     v2 = int(lista[2])
     T = int(lista[3])
     while T > 100:
-        T = int(input("Napravili ste gresku, unesite ponovo T tako da bude vece ili jednako 100: "))
+        T = int(input("Napravili ste gresku, unesite ponovo T tako da bude manje ili jednako 100: "))
     else: 
         s1 = v1 * T #predjeni put automobila1
         s2 = v2 * T #predjeni put automobila2
