@@ -22,7 +22,7 @@ def rastojanje(unos):
         # prije pocetka kretanja, u trenutku 0 -> rastojanje izmedju njih je jednako duzini staze jer tek treba da pocnu kretanje jedan ka drugom
             return L
         elif s1 + s2 == L:
-        # u slucaju da de u toku kretanja nadju u istoj tacki, odnosno predjeni put bude jednak duzini staze -> rastojanje je nula jer su stigli jedan do drugog
+        # u slucaju da se u toku kretanja nadju u istoj tacki, odnosno predjeni put bude jednak duzini staze -> rastojanje je nula jer su stigli jedan do drugog
             return 0
         elif s1 + s2 < L:
         # u slucaju da se jos uvijek nisu mimoisli, vec idu jedan ka drugom -> rastojanje je razlika duzine staze i puta koji je svaki od njih presao
