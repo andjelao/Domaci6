@@ -69,7 +69,7 @@ def bijeli_pjesak(x,y,z,q):
     #provjerava da li je bijeli pjesak na pocetnoj poziciji a to je sesti red table - ako jeste
     #on moze da se krece dva polja unaprijed
     if x == 6:
-        if z - x == -2 and q - y == 0:
+        if z - x >= -2 and z - x < 0 and q - y == 0:
             lista_bijelih.append("pjesak")
         #ako nije pocetna pozicija
     elif z - x == -1 and q - y == 0:
